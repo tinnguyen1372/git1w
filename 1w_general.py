@@ -35,9 +35,12 @@ def get_random_material():
     
     variance_factor = 0.15
     material = random.choice(list(materials.keys()))
-    permittivity = materials[material]["permittivity"] * random.uniform(1 - variance_factor, 1 + variance_factor)
+
+    if materials[material]["type"] == "Metallic":
+        permittivity = materials[material]["permittivity"]
+    else:
+        permittivity = materials[material]["permittivity"] * random.uniform(1 - variance_factor, 1 + variance_factor)
     conductivity = materials[material]["conductivity"] * random.uniform(1 - variance_factor, 1 + variance_factor)
-    
     return material, materials[material]["type"], round(permittivity, 3), round(conductivity, 6)
 
 def add_random_shape(i, geometry, air_start, air_end, wall_thickness):
