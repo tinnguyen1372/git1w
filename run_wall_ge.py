@@ -426,5 +426,5 @@ if __name__ == "__main__":
         wallimg = Wall_Func(args=args)
         print(args)
         # wallimg.view_geometry()
-        wallimg.run_base()
+        # wallimg.run_base()
         wallimg.run_2D()
