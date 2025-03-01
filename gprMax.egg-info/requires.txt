@@ -1,0 +1,10 @@
+colorama
+cython
+h5py
+jupyter
+matplotlib
+numpy
+psutil
+scipy
+terminaltables
+tqdm

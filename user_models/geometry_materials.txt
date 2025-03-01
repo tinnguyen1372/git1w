@@ -1,0 +1,16 @@
+#material: 1 inf 1 0 pec
+#material: 1 0 1 0 free_space
+#material: 5 0 1 0 bark
+#material: 6 1 1 0 cabdium_layer
+#add_dispersion_debye: 1 18 9.23e-12 cabdium_layer
+#material: 6.1 0.033 1 0 outer_sapwood
+#add_dispersion_debye: 1 12.36 9.23e-12 outer_sapwood
+#material: 5.9 0.02 1 0 inter_sapwood
+#add_dispersion_debye: 1 9.66 9.23e-12 inter_sapwood
+#material: 5.4 0.0083 1 0 ring
+#add_dispersion_debye: 1 3.1 9.23e-12 ring
+#material: 5.22 0.005 1 0 heartwood
+#add_dispersion_debye: 1 1.43 9.23e-12 heartwood
+#material: 2 0 1 0 bark+free_space+free_space+free_space
+#material: 3 0 1 0 bark+free_space+free_space+bark
+#material: 4 0 1 0 bark+bark+free_space+bark
